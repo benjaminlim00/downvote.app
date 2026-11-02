@@ -64,7 +64,7 @@ curl -s -X POST "https://downvote.app/api/refresh" \
   -H "Authorization: Bearer $DOWNVOTE_TOKEN"
 ```
 
-Save the new `token` — the old one is invalidated.
+It returns the same `token` with a new `expires_at`, so your saved token keeps working.
 
 ### Revoke your token
 
